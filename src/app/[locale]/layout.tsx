@@ -4,6 +4,7 @@ import "@/styles/global.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
+import { proxima } from "@/constants/fonts";
 import { appConfig } from "@/utils/app-config";
 
 // export const metadata: Metadata = {
@@ -45,7 +46,10 @@ export default function RootLayout(props: {
   const messages = useMessages();
 
   return (
-    <html lang={props.params.locale}>
+    <html
+      lang={props.params.locale}
+      className={`${proxima.variable} font-sans`}
+    >
       <body>
         <NextIntlClientProvider
           locale={props.params.locale}

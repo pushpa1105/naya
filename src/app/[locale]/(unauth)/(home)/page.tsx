@@ -7,7 +7,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/cards";
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
-    <main className="m-2 flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <CardContainer className="inter-var">
         <CardBody className="group/card relative size-auto  rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[30rem]  ">
           <CardItem
