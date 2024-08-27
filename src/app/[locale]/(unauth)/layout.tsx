@@ -5,10 +5,10 @@ export default function UnauthorizedLayout(props: {
   children: React.ReactNode;
 }) {
   return (
-    <main>
+    <>
       <Navbar />
-      <>{props.children}</>
+      <main className="h-screen p-12 pt-24">{props.children}</main>
       <Footer />
-    </main>
+    </>
   );
 }
