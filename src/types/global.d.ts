@@ -1,4 +1,7 @@
 interface Member {
-  name: string;
-  mainImageSrc: string;
+  id: number;
+  title: string;
+  src: string;
+  redirectUrl: string;
+  shortDesc: string;
 }

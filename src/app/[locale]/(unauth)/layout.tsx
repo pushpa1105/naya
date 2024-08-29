@@ -1,5 +1,5 @@
 import Footer from "@/components/layouts/footer";
-import Navbar from "@/components/layouts/navbar";
+import Navbar from "@/components/layouts/nav";
 
 export default function UnauthorizedLayout(props: {
   children: React.ReactNode;
@@ -7,7 +7,9 @@ export default function UnauthorizedLayout(props: {
   return (
     <>
       <Navbar />
-      <main className="h-screen p-12 pt-24">{props.children}</main>
+      <main className="h-[calc(100vh-75px)] p-6 pt-16 md:p-12 md:pt-24">
+        {props.children}
+      </main>
       <Footer />
     </>
   );
