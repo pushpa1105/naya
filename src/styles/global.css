@@ -70,6 +70,34 @@
   }
 }
 
+@layer utilities {
+  .corner-borders {
+    position: relative;
+  }
+
+  .corner-borders::before,
+  .corner-borders::after {
+    content: "";
+    position: absolute;
+    width: 10px; /* Adjust width and height for corner size */
+    height: 10px;
+    border-style: solid;
+    border-width: 2px; /* Adjust the border width as needed */
+  }
+
+  .corner-borders::before {
+    top: 0;
+    left: 0;
+    border-color: white transparent transparent white; /* Top-left corner */
+  }
+
+  .corner-borders::after {
+    bottom: 0;
+    right: 0;
+    border-color: transparent white white transparent; /* Bottom-right corner */
+  }
+}
+
 .focus-card::after {
   position: absolute;
   top: 0;
