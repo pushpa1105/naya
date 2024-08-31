@@ -35,7 +35,7 @@ const MenuToggle: React.FC<MenuTogglePropType> = ({ openNav, toggleMenu }) => {
 const MobileNav = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <div className="max-w-screen fixed flex w-full flex-row justify-between p-6 sm:hidden">
+    <div className=" max-w-screen fixed flex w-full flex-row justify-between bg-black p-6 sm:hidden">
       <Link href={URLS.HOME}>
         <Logo />
       </Link>

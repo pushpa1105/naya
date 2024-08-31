@@ -9,8 +9,8 @@ export default function UnauthorizedLayout(props: {
       <Navbar />
       <main className="h-[calc(100vh-75px)] p-6 pt-16 md:p-12 md:pt-24">
         {props.children}
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

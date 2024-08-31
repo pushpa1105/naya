@@ -8,7 +8,7 @@ import { URLS } from "@/constants/urls";
 
 const DesktopNav = () => {
   return (
-    <div className="fixed hidden w-full flex-row justify-between p-6 px-12 sm:flex">
+    <div className="fixed hidden w-full flex-row justify-between bg-black p-6 px-12 sm:flex">
       <Link href={URLS.HOME}>
         <Logo />
       </Link>
