@@ -11,6 +11,16 @@ export default function HomePage() {
       <div className="my-2 mb-4 lg:my-16">
         <SocialHandles />
       </div>
+      {/*
+       **
+       ** #TODO: For Video, new ideas needed
+       ** 1. https://ui.aceternity.com/components/container-scroll-animation
+       ** 2. https://www.arianagrande.com/
+       ** 3.
+       ** 4.
+       ** 5.
+       **
+       */}
       <NayaPlayer url={mainVideoUrl} width="75%" />
     </>
   );

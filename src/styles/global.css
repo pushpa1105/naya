@@ -71,6 +71,12 @@
 }
 
 @layer utilities {
+  /* For corner border style
+  ** 
+  ** Usage => <div className="corner-borders"/> 
+  **
+  ** <--------START-------->
+  */
   .corner-borders {
     position: relative;
   }
@@ -96,8 +102,40 @@
     right: 0;
     border-color: transparent white white transparent; /* Bottom-right corner */
   }
+  /* For corner border style
+  ** <--------END-------->
+  */
+
+  /* For custom scrollbar
+  ** #TODO: For scrollbar lets try something like this => https://ui.aceternity.com/components/tracing-beam
+  **
+  ** <--------START-------->
+  */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #464547;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 100vh;
+    border: 1px solid #464547;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+  }
 }
 
+/* 
+** for card backgroud shadow
+** overlayed text can be visible
+*/
 .focus-card::after {
   position: absolute;
   top: 0;

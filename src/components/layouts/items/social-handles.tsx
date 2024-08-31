@@ -34,7 +34,12 @@ const SocialHandles = () => {
     <div
       className="align-center m-auto flex justify-between gap-x-4"
       onMouseOver={() => setHovered(true)}
-      onMouseOut={() => setHovered(false)}
+      onScroll={() => setHovered(true)}
+      onMouseOut={() =>
+        setTimeout(() => {
+          setHovered(false);
+        }, 1000)
+      }
     >
       <LinkPreview
         url={WAKEONE_WEBSITE}

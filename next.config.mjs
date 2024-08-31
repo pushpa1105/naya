@@ -30,6 +30,11 @@ const nextConfig = {
         destination: "/en",
         permanent: true,
       },
+      {
+        source: "/:locale((?!en).*)", // #TODO: For supports english only
+        destination: "/en",
+        permanent: true,
+      },
     ];
   },
 };
