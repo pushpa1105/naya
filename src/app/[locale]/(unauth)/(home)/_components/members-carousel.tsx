@@ -28,13 +28,13 @@ const MembersCarousel = () => {
   const computedMembersData = membersInfoBasedOnDay();
 
   return (
-    <section className="embla h-full overflow-hidden [overflow-y:overlay]">
-      <div className="embla__viewport h-full" ref={emblaRef}>
-        <div className="embla__container flex h-[95%] gap-x-2 lg:h-full">
+    <section className="h-full overflow-hidden [overflow-y:overlay]">
+      <div className="h-full" ref={emblaRef}>
+        <div className="flex h-[95%] gap-x-2 lg:h-full">
           {computedMembersData.map((member, index) => (
             <div
               className={cn(
-                "embla__slide h-full max-h-full my-auto hover:max-h-full transition-all duration-500 ease-in-out cursor-pointer flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.3%] lg:flex-auto lg:max-h-[75%]",
+                "h-full max-h-full my-auto hover:max-h-full transition-all duration-500 ease-in-out cursor-pointer flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.3%] lg:flex-auto lg:max-h-[75%]",
                 index === activeCard && "max-h-full lg:max-h-full",
               )}
               key={index}

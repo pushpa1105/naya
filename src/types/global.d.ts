@@ -5,3 +5,13 @@ interface Member {
   redirectUrl: string;
   shortDesc: string;
 }
+
+interface NayaPlayerType {
+  url: string;
+  loop?: boolean;
+  controls?: boolean;
+  width?: string;
+  height?: string;
+  playing?: boolean;
+  volume?: number;
+}

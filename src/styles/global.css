@@ -130,6 +130,10 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #000000;
   }
+
+  button:disabled {
+    opacity: 0.3;
+  }
 }
 
 /* 

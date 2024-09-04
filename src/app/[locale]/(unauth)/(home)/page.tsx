@@ -1,5 +1,6 @@
 "use client";
 import MembersCarousel from "@/app/[locale]/(unauth)/(home)/_components/members-carousel";
+import PromoVideos from "@/app/[locale]/(unauth)/(home)/_components/promo-videos";
 import SocialHandles from "@/components/layouts/items/social-handles";
 import NayaPlayer from "@/components/video/naya-player";
 
@@ -16,12 +17,10 @@ export default function HomePage() {
        ** #TODO: For Video, new ideas needed
        ** 1. https://ui.aceternity.com/components/container-scroll-animation
        ** 2. https://www.arianagrande.com/
-       ** 3.
-       ** 4.
-       ** 5.
        **
        */}
       <NayaPlayer url={mainVideoUrl} width="75%" />
+      <PromoVideos />
     </>
   );
 }

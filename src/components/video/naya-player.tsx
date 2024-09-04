@@ -5,26 +5,16 @@ import React from "react";
 
 import { cn } from "@/libs/utils";
 
-type NayaPlayerProps = {
-  url: string;
-  loop?: boolean;
-  controls?: boolean;
-  width?: string;
-  height?: string;
-  playing?: boolean;
-  volume?: number;
-};
-
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
-const NayaPlayer: React.FC<NayaPlayerProps> = (props) => {
+const NayaPlayer: React.FC<NayaPlayerType> = (props) => {
   const {
     url,
     loop = true,
-    controls = false,
+    controls = true,
     width = "100%",
     height = "100%",
-    playing = true,
+    playing = false,
     volume = 0,
   } = props;
   return (
