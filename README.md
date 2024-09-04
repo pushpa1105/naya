@@ -1,105 +1,57 @@
-# Next.js 14+ Boilerplate with Tailwind CSS 3.4 and TypeScript
+# IZNAYA - The Ultimate Fan Site for IZNA
 
-🚀 A boilerplate for building Next.js projects with the App Router, Tailwind CSS, and TypeScript. This setup emphasizes a high-quality developer experience with a modern stack that includes Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Commitlint, and Tailwind CSS. It also supports multi-language (i18n) out of the box. Optimized for compatibility with Next.js 15 and beyond.
+[![License](https://img.shields.io/github/license/pushpa1105/naya)](LICENSE)
 
-Clone this repository to kickstart your own [Next.js](https://nextjs.org) project.
+Welcome to IZNAYA, the fan project for IZNA! This Next.js application is dedicated to providing IZNA fans (NAYA) with a comprehensive platform to explore the group's music, performances, news, and community.
 
-### 🌟 Features
+## Features
 
-This boilerplate focuses on flexibility and a streamlined developer experience, allowing you to remove or extend components as needed:
+- **Group Profile**: Detailed information about IZNA members, including profiles, discography, and achievements.
+- **Music Library**: A collection of IZNA's songs, albums, and music videos.
+  <!-- - **Performance Archive**: Videos and photos from concerts, variety shows, and other appearances. -->
+  <!-- - **News Feed**: Latest updates on IZNA's activities, schedules, and announcements. -->
+  <!-- - **Community Forum**: A space for NAYA to discuss, share fan art, and connect with each other. -->
+  <!-- - **Merchandise Store**: Official merchandise available for purchase. -->
 
-- ⚡ [Next.js](https://nextjs.org) with App Router support
-- 🔥 [TypeScript](https://www.typescriptlang.org) for type safety
-- 💎 [Tailwind CSS](https://tailwindcss.com) integration for rapid UI development
-- ✅ Strict Mode for TypeScript and React 18
-- 🌐 Multi-language (i18n) with [next-intl](https://next-intl-docs.vercel.app/)
-- ♻️ Type-safe environment variables with T3 Env
-- 📏 Linter with [ESLint](https://eslint.org)
-- 💖 Code formatting with [Prettier](https://prettier.io)
-- 🦊 Husky for managing Git hooks
-- 🚫 Lint-staged for running linters on Git staged files
-- 🚓 Commitlint to enforce conventional commit messages
-- 💡 Absolute Imports using `@` prefix
-- 🗺️ SEO Enhancements like sitemap.xml and robots.txt generation
-- 🌈 Simple Theme included for a quick start
+## Getting Started
 
-
-### 📋Requirements
-
-- Node.js 20+ and npm
-
-### Getting started
-
-Clone the repository and install dependencies:
+1. Clone the repository:
 
 ```shell
-git clone <repo-url> my-project-name
-cd my-project-name
+git clone https://github.com/pushpa1105/naya.git
+```
+
+2. Install dependencies:
+
+```shell
 npm install
 ```
 
-Run the development server:
+3. Start the development server:
 
 ```shell
 npm run dev
 ```
 
-Visit http://localhost:3000 in your browser to see your project in action..
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 📂Project structure
+## License
 
-```shell
-.
-├── README.md                    # Documentation
-├── .github                      # GitHub configurations
-├── .husky                       # Husky Git hooks configurations
-├── .vscode                      # VSCode settings
-├── public                       # Public assets
-├── src                          # Main source code
-│   ├── app                      # Next.js App Router components
-│   ├── components               # Reusable React components
-│   ├── libs                     # Third-party library configurations
-│   ├── locales                  # Internationalization files (i18n)
-│   ├── styles                   # Global and component styles
-│   ├── types                    # TypeScript type definitions
-│   ├── utils                    # Utility functions
-├── tailwind.config.js           # Tailwind CSS configuration
-└── tsconfig.json                # TypeScript configuration
-```
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-Feel free to customize the provided code to fit your needs 🚀.
+Additionally, please note:
 
-### 🔖 Commit Guidelines
+1. This is an unofficial fan site and is not affiliated with or endorsed by IZNA or their management.
+2. All rights to IZNA's music, images, and other creative works remain with their rightful owners.
+3. Commercial use of any content from this site is strictly prohibited without explicit permission from the copyright holders.
+4. By using this site, you agree to these terms and acknowledge that you will not use any content for commercial purposes.
 
-This project uses the [Conventional Commits](https://www.conventionalcommits.org/) standard for commit messages. To simplify the commit process, use [Commitizen](https://github.com/commitizen/cz-cli), an interactive CLI that guides you through the commit process. To use it, run the following command:
+## Acknowledgments
 
-```shell
-npm run commit
-```
+- Special thanks to IZNA and their management team for creating such amazing music and performances.
+- Thanks to all NAYA who contribute to the community and support IZNA.
+- Inspiration drawn from various K-pop fan sites and Next.js projects.
 
+## Support
 
-### 🌍 Deploying to Production
-
-Build the production version:
-
-```shell
-$ npm run build
-```
-
-To test the production build locally, run:
-
-```shell
-$ npm run start
-```
-
-Open http://localhost:3000 to see the production version.
-
-#### Bundle Analyzer
-
-To analyze the JavaScript bundle size, use the built-in bundle analyzer:
-
-```shell
-npm run build-stats
-```
-
-This command will generate and open a report in your browser.
+Give a ⭐️ if this project helped you!
