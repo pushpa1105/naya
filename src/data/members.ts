@@ -1,17 +1,26 @@
 import { URLS } from "@/constants/urls";
+import {
+  JEEMIN_MAIN,
+  JIYOON_MAIN,
+  JUNGEUN_MAIN,
+  KOKO_MAIN,
+  MAI_MAIN,
+  SAEBI_MAIN,
+  SARANG_MAIN,
+} from "@/data/images";
 
 export const membersInfo: Member[] = [
   {
     id: 1,
     title: "Choi Jungeun",
-    src: "/assets/images/main/jungeun.jpeg",
+    src: JUNGEUN_MAIN,
     redirectUrl: URLS.JUNGEUN,
     shortDesc: "South-Korean singer under WakeOne. #BabyCheetah #AllRounder",
   },
   {
     id: 2,
     title: "Bang Jeemin",
-    src: "/assets/images/main/jeemin.jpeg",
+    src: JEEMIN_MAIN,
     redirectUrl: URLS.JEEMIN,
     shortDesc:
       "South-Korean singer under WakeOne. #FormerHYBETrainee #FormerHYBETrainee",
@@ -19,7 +28,7 @@ export const membersInfo: Member[] = [
   {
     id: 3,
     title: "Yoon Jiyoon",
-    src: "/assets/images/main/jiyoon.jpeg",
+    src: JIYOON_MAIN,
     redirectUrl: URLS.JIYOON,
     shortDesc:
       "South-Korean singer under WakeOne. #UniqueVoice #OnPointShoulders",
@@ -27,7 +36,7 @@ export const membersInfo: Member[] = [
   {
     id: 4,
     title: "Narai Koko",
-    src: "/assets/images/main/koko.jpeg",
+    src: KOKO_MAIN,
     redirectUrl: URLS.KOKO,
     shortDesc:
       "Japanese singer under WakeOne. #LovelyDeer #ShinyLongFlowingHair",
@@ -35,7 +44,7 @@ export const membersInfo: Member[] = [
   {
     id: 5,
     title: "Ryu Sarang",
-    src: "/assets/images/main/sarang.jpeg",
+    src: SARANG_MAIN,
     redirectUrl: URLS.SARANG,
     shortDesc:
       "South-Korean singer under WakeOne. #FacialExpressionGenius #SmilePotato",
@@ -43,7 +52,7 @@ export const membersInfo: Member[] = [
   {
     id: 6,
     title: "Tomioka Mai",
-    src: "/assets/images/main/mai.jpeg",
+    src: MAI_MAIN,
     redirectUrl: URLS.MAI,
     shortDesc:
       "Japanese singer under WakeOne. #CoolBeautyofJapan #No.1VisualPICKAmongTrainees",
@@ -51,7 +60,7 @@ export const membersInfo: Member[] = [
   {
     id: 7,
     title: "Jeong Sae Bi",
-    src: "/assets/images/main/saebi.jpeg",
+    src: SAEBI_MAIN,
     redirectUrl: URLS.SAEBI,
     shortDesc:
       "South-Korean singer under WakeOne. #Longest-termTrainee #107cmLegs",

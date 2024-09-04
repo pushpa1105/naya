@@ -1,8 +1,11 @@
 # IZNAYA - The Ultimate Fan Site for IZNA
 
 [![License](https://img.shields.io/github/license/pushpa1105/naya)](LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fiznaya.netlify.app)](https://iznaya.netlify.app)
 
 Welcome to IZNAYA, the fan project for IZNA! This Next.js application is dedicated to providing IZNA fans (NAYA) with a comprehensive platform to explore the group's music, performances, news, and community.
+
+<img src="./public/assets/images/izna/iznaya.png">
 
 ## Features
 
@@ -12,6 +15,7 @@ Welcome to IZNAYA, the fan project for IZNA! This Next.js application is dedicat
   <!-- - **News Feed**: Latest updates on IZNA's activities, schedules, and announcements. -->
   <!-- - **Community Forum**: A space for NAYA to discuss, share fan art, and connect with each other. -->
   <!-- - **Merchandise Store**: Official merchandise available for purchase. -->
+- **Many more coming up**
 
 ## Getting Started
 

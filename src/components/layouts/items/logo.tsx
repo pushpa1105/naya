@@ -1,9 +1,11 @@
 import Image from "next/image";
 
+import { IZNA_LOGO } from "@/data/images";
+
 const Logo = () => {
   return (
     <Image
-      src={"/assets/images/izna/logo_transparent.png"}
+      src={IZNA_LOGO}
       alt="Izna Logo"
       width={55}
       height={30}

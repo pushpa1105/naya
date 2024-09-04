@@ -1,7 +1,7 @@
 interface Member {
   id: number;
   title: string;
-  src: string;
+  src: string | StaticImageData;
   redirectUrl: string;
   shortDesc: string;
 }
