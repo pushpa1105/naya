@@ -14,3 +14,4 @@ export { default as WAKEONE_LOGO } from "../../public/assets/images/main/wakeone
 
 //PROFILE PAGE
 export { default as IZNA_BANNER } from "../../public/assets/images/izna/izna_banner.jpg";
+export { default as IZNA_PROFILE } from "../../public/assets/images/izna/izna_profile_one.jpg";

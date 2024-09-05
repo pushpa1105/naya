@@ -21,5 +21,6 @@ const generateProfileUrl = () => {
 
 export const URLS = {
   HOME: "/en",
+  PROFILE: "/en/profile",
   ...generateProfileUrl(),
 };

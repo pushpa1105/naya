@@ -6,8 +6,8 @@ export const publicNavigations: PublicNavigationItem[] = [
     path: URLS.HOME,
   },
   {
-    name: "About",
-    path: "/",
+    name: "Profile",
+    path: URLS.PROFILE,
   },
   {
     name: "Career",
