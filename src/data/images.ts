@@ -15,3 +15,10 @@ export { default as WAKEONE_LOGO } from "../../public/assets/images/main/wakeone
 //PROFILE PAGE
 export { default as IZNA_BANNER } from "../../public/assets/images/izna/izna_banner.jpg";
 export { default as IZNA_PROFILE } from "../../public/assets/images/izna/izna_profile_one.jpg";
+export { default as JEEMIN_PROFILE } from "../../public/assets/images/izna/jeemin/profile.jpg";
+export { default as JIYOON_PROFILE } from "../../public/assets/images/izna/jiyoon/profile.jpg";
+export { default as JUNGEUN_PROFILE } from "../../public/assets/images/izna/jungeun/profile.jpg";
+export { default as KOKO_PROFILE } from "../../public/assets/images/izna/koko/profile.jpg";
+export { default as MAI_PROFILE } from "../../public/assets/images/izna/mai/profile.jpg";
+export { default as SAEBI_PROFILE } from "../../public/assets/images/izna/saebi/profile.jpg";
+export { default as SARANG_PROFILE } from "../../public/assets/images/izna/sarang/profile.jpg";

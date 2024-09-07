@@ -8,13 +8,11 @@ const members = [
   "SAEBI",
 ] as const;
 
-type MemberName = (typeof members)[number];
-
 const generateProfileUrl = () => {
   return Object.fromEntries(
     members.map((member: MemberName) => [
       member,
-      `/en/${member.toLowerCase()}/profile`,
+      `/en/${member.toLowerCase()}`,
     ]),
   ) as Record<MemberName, string>;
 };

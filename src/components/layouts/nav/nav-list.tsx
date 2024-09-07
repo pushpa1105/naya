@@ -16,7 +16,7 @@ const NavList = () => {
             href={nav.path}
             className={cn(
               "tracking-[4px] hover:text-white hover:text-2xl transition-all duration-300 ease-in-out",
-              nav.path === currentRoute
+              nav.activePaths.includes(currentRoute)
                 ? "text-white line-through decoration-purple-500 text-4xl"
                 : "text-gray-400",
             )}
