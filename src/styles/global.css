@@ -135,10 +135,15 @@
     opacity: 0.3;
   }
 }
+/* For custom scrollbar
+  **
+  ** <--------END-------->
+  */
 
 /* 
 ** for card backgroud shadow
 ** overlayed text can be visible
+** <--------START-------->
 */
 .focus-card::after {
   position: absolute;
@@ -154,5 +159,28 @@
   content: "";
   pointer-events: none;
 }
+
+/* 
+** for card backgroud shadow
+** overlayed text can be visible
+** <--------END-------->
+*/
+
+/* 
+** For outlined text
+** 
+** <--------START-------->
+*/
+.outline-text-white {
+  -webkit-text-stroke-color: rgb(170 170 170 / 1);
+  -webkit-text-stroke-width: 1.5px;
+  color: transparent;
+}
+
+/* 
+** For outlined text
+** 
+** <--------END-------->
+*/
 
 @import url("./index.css");

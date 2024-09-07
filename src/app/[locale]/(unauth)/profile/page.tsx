@@ -10,7 +10,7 @@ import IznaProfile from "./_components/profile";
 const ProfilePage = () => {
   return (
     <div className="relative mt-12">
-      <h2 className="absolute left-[5px] top-5 flex justify-center text-[calc(9.25926vw+15.37px)] font-bold leading-[1.1em] text-black opacity-50 md:top-10">
+      <h2 className="absolute left-[5px] flex justify-center text-[calc(9.25926vw+15.37px)] font-bold leading-[1.1em] text-black opacity-50 md:top-12">
         IZNA
       </h2>
       <Image
