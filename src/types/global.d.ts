@@ -15,6 +15,22 @@ interface Member {
   profileImageUrl: string | StaticImageData;
   redirectUrl: string;
   shortDesc: string;
+  hashTags: Array<string>;
+  homeTown: string;
+  country: string;
+  birthday: string;
+  nativeName: string;
+  bloodType: string;
+  height: string;
+  zodiacSign: string;
+  mbti: string;
+  favouriteAnimal: string;
+  favouriteSeason: string;
+  favouriteFruit: string;
+  favouriteDessert: string;
+  favouriteColor: string;
+  funFacts: Array<string>;
+  signature: string;
 }
 
 interface NayaPlayerType {

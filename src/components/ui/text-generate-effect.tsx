@@ -4,18 +4,20 @@ import { useEffect } from "react";
 
 import { cn } from "@/libs/utils";
 
-export const TextGenerateEffect = ({
-  words,
-  className = "",
-  filter = true,
-  duration = 0.5,
-  startAfter = 0,
-}: {
+type TextGenerateEffectProps = {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
   startAfter?: number;
+};
+
+export const TextGenerateEffect: React.FC<TextGenerateEffectProps> = ({
+  words,
+  className = "",
+  filter = true,
+  duration = 0.5,
+  startAfter = 0,
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");

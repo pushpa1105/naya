@@ -15,14 +15,16 @@ const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
 
-export const CardContainer = ({
-  children,
-  className,
-  containerClassName,
-}: {
+type CardContainerProps = {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+};
+
+export const CardContainer: React.FC<CardContainerProps> = ({
+  children,
+  className,
+  containerClassName,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -79,13 +81,12 @@ export const CardContainer = ({
   );
 };
 
-export const CardBody = ({
-  children,
-  className,
-}: {
+type CardBodyProps = {
   children: React.ReactNode;
   className?: string;
-}) => {
+};
+
+export const CardBody: React.FC<CardBodyProps> = ({ children, className }) => {
   return (
     <div
       className={cn(
@@ -98,18 +99,7 @@ export const CardBody = ({
   );
 };
 
-export const CardItem = ({
-  as: Tag = "div",
-  children,
-  className,
-  translateX = 0,
-  translateY = 0,
-  translateZ = 0,
-  rotateX = 0,
-  rotateY = 0,
-  rotateZ = 0,
-  ...rest
-}: {
+type CardItemProps = {
   as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
@@ -120,6 +110,19 @@ export const CardItem = ({
   rotateY?: number | string;
   rotateZ?: number | string;
   [key: string]: any;
+};
+
+export const CardItem: React.FC<CardItemProps> = ({
+  as: Tag = "div",
+  children,
+  className,
+  translateX = 0,
+  translateY = 0,
+  translateZ = 0,
+  rotateX = 0,
+  rotateY = 0,
+  rotateZ = 0,
+  ...rest
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();

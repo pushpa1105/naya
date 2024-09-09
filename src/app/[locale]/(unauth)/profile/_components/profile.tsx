@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+import MembersCardSection from "@/components/common/members-card";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { IZNA_PROFILE } from "@/data/images";
 import {
@@ -9,8 +10,6 @@ import {
   PROFILE_CONTENT_TWO,
 } from "@/data/profile";
 import { cn } from "@/libs/utils";
-
-import MembersCardSection from "./members-card";
 
 const IznaProfile = () => {
   const [active, setActive] = useState(false);

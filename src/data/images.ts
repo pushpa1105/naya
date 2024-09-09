@@ -22,3 +22,12 @@ export { default as KOKO_PROFILE } from "../../public/assets/images/izna/koko/pr
 export { default as MAI_PROFILE } from "../../public/assets/images/izna/mai/profile.jpg";
 export { default as SAEBI_PROFILE } from "../../public/assets/images/izna/saebi/profile.jpg";
 export { default as SARANG_PROFILE } from "../../public/assets/images/izna/sarang/profile.jpg";
+
+//SIGNATURES
+export { default as JEEMIN_SIGNATURE } from "../../public/assets/images/signature/jeemin.svg";
+export { default as JIYOON_SIGNATURE } from "../../public/assets/images/signature/jiyoon.svg";
+export { default as JUNGEUN_SIGNATURE } from "../../public/assets/images/signature/jungeun.svg";
+export { default as KOKO_SIGNATURE } from "../../public/assets/images/signature/koko.svg";
+export { default as MAI_SIGNATURE } from "../../public/assets/images/signature/mai.svg";
+export { default as SAEBI_SIGNATURE } from "../../public/assets/images/signature/saebi.svg";
+export { default as SARANG_SIGNATURE } from "../../public/assets/images/signature/sarang.svg";

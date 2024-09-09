@@ -25,7 +25,7 @@ type LinkPreviewProps = {
   | { isStatic?: false; imageSrc?: never }
 );
 
-export const LinkPreview = ({
+export const LinkPreview: React.FC<LinkPreviewProps> = ({
   children,
   url,
   className,
@@ -34,7 +34,7 @@ export const LinkPreview = ({
   quality = 50,
   isStatic = false,
   imageSrc = "",
-}: LinkPreviewProps) => {
+}) => {
   let src;
   if (!isStatic) {
     const params = encode({
