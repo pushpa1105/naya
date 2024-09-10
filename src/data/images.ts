@@ -31,3 +31,37 @@ export { default as KOKO_SIGNATURE } from "../../public/assets/images/signature/
 export { default as MAI_SIGNATURE } from "../../public/assets/images/signature/mai.svg";
 export { default as SAEBI_SIGNATURE } from "../../public/assets/images/signature/saebi.svg";
 export { default as SARANG_SIGNATURE } from "../../public/assets/images/signature/sarang.svg";
+
+// FOR GALLERY
+export { default as ONE } from "../../public/assets/images/gallery/after_final.jpg";
+export { default as TWO } from "../../public/assets/images/gallery/bewants_1.jpg";
+export { default as FOUR } from "../../public/assets/images/gallery/big_three.jpg";
+export { default as FIVE } from "../../public/assets/images/gallery/card.jpg";
+export { default as SIX } from "../../public/assets/images/gallery/card_collection.jpg";
+export { default as SEVEN } from "../../public/assets/images/gallery/content.jpg";
+export { default as EIGHT } from "../../public/assets/images/gallery/group.jpg";
+export { default as NINE } from "../../public/assets/images/gallery/heart.jpg";
+export { default as TEN } from "../../public/assets/images/gallery/izna_form.jpg";
+export { default as ELEVEN } from "../../public/assets/images/gallery/izna_live.jpg";
+export { default as TWELVE } from "../../public/assets/images/gallery/jeemin_1.jpg";
+export { default as THIRTEEN } from "../../public/assets/images/gallery/jeemin_2.jpg";
+export { default as FOURTEEN } from "../../public/assets/images/gallery/jiyoon_1.jpg";
+export { default as SIXTEEN } from "../../public/assets/images/gallery/jiyoon_2.jpg";
+export { default as SEVENTEEN } from "../../public/assets/images/gallery/jungeun_1.jpg";
+export { default as EIGHTEEN } from "../../public/assets/images/gallery/jungeun_2.jpg";
+export { default as NINETEEN } from "../../public/assets/images/gallery/jungeun_3.jpg";
+export { default as TWENTY } from "../../public/assets/images/gallery/kcon.jpg";
+export { default as TWO_ONE } from "../../public/assets/images/gallery/koko_1.jpg";
+export { default as TWO_TWO } from "../../public/assets/images/gallery/koko_2.jpg";
+export { default as TWO_THREE } from "../../public/assets/images/gallery/live_1.jpg";
+export { default as TWO_FOUR } from "../../public/assets/images/gallery/live_2.jpg";
+export { default as TWO_FIVE } from "../../public/assets/images/gallery/logo.jpg";
+export { default as TWO_SIX } from "../../public/assets/images/gallery/mai_1.jpg";
+export { default as TWO_SEVEN } from "../../public/assets/images/gallery/mai_2.jpg";
+export { default as TWO_EIGHT } from "../../public/assets/images/gallery/profile_1.jpg";
+export { default as TWO_NINE } from "../../public/assets/images/gallery/profile_photo.jpg";
+export { default as THREE_ONE } from "../../public/assets/images/gallery/profile_shoot.jpg";
+export { default as THREE_TWO } from "../../public/assets/images/gallery/saebi_1.jpg";
+export { default as THREE_THREE } from "../../public/assets/images/gallery/sarang_1.jpg";
+export { default as THREE_FOUR } from "../../public/assets/images/gallery/tiktok.jpg";
+export { default as THREE_FIVE } from "../../public/assets/images/gallery/unnie_line1.jpg";

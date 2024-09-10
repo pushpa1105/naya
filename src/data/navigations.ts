@@ -1,10 +1,13 @@
 import { URLS } from "@/constants/urls";
 
+const galleryPattern = /^\/en\/gallery\/(\d+)$/;
+
 export const publicNavigations: PublicNavigationItem[] = [
   {
     name: "Izna",
     path: URLS.HOME,
     activePaths: [URLS.HOME],
+    isActive: (route: string) => [URLS.HOME].includes(route),
   },
   {
     name: "Profile",
@@ -19,10 +22,23 @@ export const publicNavigations: PublicNavigationItem[] = [
       URLS.SAEBI,
       URLS.SARANG,
     ],
+    isActive: (route: string) =>
+      [
+        URLS.PROFILE,
+        URLS.JEEMIN,
+        URLS.JIYOON,
+        URLS.JUNGEUN,
+        URLS.KOKO,
+        URLS.MAI,
+        URLS.SAEBI,
+        URLS.SARANG,
+      ].includes(route),
   },
   {
-    name: "Career",
-    path: "/",
-    activePaths: ["/"],
+    name: "Gallery",
+    path: URLS.GALLERY,
+    activePaths: [URLS.GALLERY],
+    isActive: (route: string) =>
+      [URLS.GALLERY].includes(route) || galleryPattern.test(route),
   },
 ];

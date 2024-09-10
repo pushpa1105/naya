@@ -20,5 +20,7 @@ const generateProfileUrl = () => {
 export const URLS = {
   HOME: "/en",
   PROFILE: "/en/profile",
+  GALLERY: "/en/gallery",
+  GALLERY_IMAGE: (id: string | number) => `/en/gallery/${id}`,
   ...generateProfileUrl(),
 };

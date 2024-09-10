@@ -42,3 +42,10 @@ interface NayaPlayerType {
   playing?: boolean;
   volume?: number;
 }
+
+interface GalleryImageType {
+  id: number;
+  src: string | StaticImageData;
+  title: string;
+  tags?: Array<string>;
+}
