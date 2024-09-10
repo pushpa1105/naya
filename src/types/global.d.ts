@@ -41,11 +41,21 @@ interface NayaPlayerType {
   height?: string;
   playing?: boolean;
   volume?: number;
+  playerClassname?: string;
 }
 
 interface GalleryImageType {
   id: number;
   src: string | StaticImageData;
   title: string;
+  tags?: Array<string>;
+}
+
+interface VideoDataType {
+  id: number;
+  src: string;
+  platform?: "Youtube" | "Others";
+  title: string;
+  description?: string;
   tags?: Array<string>;
 }

@@ -34,19 +34,26 @@ const MenuToggle: React.FC<MenuTogglePropType> = ({ openNav, toggleMenu }) => {
 
 const MobileNav = () => {
   const [openNav, setOpenNav] = useState(false);
+
+  const toggleMobileNav = (open: boolean) => {
+    setOpenNav(open);
+  };
   return (
     <div className=" max-w-screen fixed flex w-full flex-row justify-between bg-black p-6 sm:hidden">
       <Link href={URLS.HOME}>
         <Logo />
       </Link>
-      <MenuToggle openNav={openNav} toggleMenu={() => setOpenNav(!openNav)} />
+      <MenuToggle
+        openNav={openNav}
+        toggleMenu={() => toggleMobileNav(!openNav)}
+      />
       <div
         className={cn(
           "fixed top-[60px] left-0 w-full h-[calc(100vh-60px)] bg-black shadow-lg transform transition-transform duration-300 ease-in-out -translate-x-full",
           openNav && "translate-x-0",
         )}
       >
-        <NavList />
+        <NavList onNavSelected={() => toggleMobileNav(false)} />
       </div>
     </div>
   );

@@ -6,7 +6,11 @@ import { usePathname } from "next/navigation";
 import { publicNavigations } from "@/data/navigations";
 import { cn } from "@/libs/utils";
 
-const NavList = () => {
+type NavListProps = {
+  onNavSelected?: Function;
+};
+
+const NavList: React.FC<NavListProps> = ({ onNavSelected = () => {} }) => {
   const currentRoute = usePathname();
   return (
     <ul className="flex size-full flex-col justify-center space-y-4 pl-8 text-[16px] font-semibold sm:size-auto sm:flex-row sm:space-x-4 sm:space-y-0 sm:pl-0">
@@ -14,6 +18,7 @@ const NavList = () => {
         <li key={nav.name}>
           <Link
             href={nav.path}
+            onClick={() => onNavSelected()}
             className={cn(
               "tracking-[4px] hover:text-white hover:text-2xl transition-all duration-300 ease-in-out",
               nav.isActive(currentRoute)

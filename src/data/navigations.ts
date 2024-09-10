@@ -1,6 +1,7 @@
 import { URLS } from "@/constants/urls";
 
 const galleryPattern = /^\/en\/gallery\/(\d+)$/;
+const videosPattern = /^\/en\/videos\/(\d+)$/;
 
 export const publicNavigations: PublicNavigationItem[] = [
   {
@@ -40,5 +41,12 @@ export const publicNavigations: PublicNavigationItem[] = [
     activePaths: [URLS.GALLERY],
     isActive: (route: string) =>
       [URLS.GALLERY].includes(route) || galleryPattern.test(route),
+  },
+  {
+    name: "Videos",
+    path: URLS.VIDEOS,
+    activePaths: [URLS.VIDEOS],
+    isActive: (route: string) =>
+      [URLS.VIDEOS].includes(route) || videosPattern.test(route),
   },
 ];

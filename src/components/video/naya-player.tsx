@@ -16,6 +16,7 @@ const NayaPlayer: React.FC<NayaPlayerType> = (props) => {
     height = "100%",
     playing = false,
     volume = 0,
+    playerClassname = "",
   } = props;
   return (
     <ReactPlayer
@@ -29,6 +30,7 @@ const NayaPlayer: React.FC<NayaPlayerType> = (props) => {
       className={cn(
         "m-auto h-auto flex !w-full justify-center",
         width !== "100%" && `!w-full md:w-[${width}]`,
+        playerClassname,
       )}
       config={{
         youtube: {

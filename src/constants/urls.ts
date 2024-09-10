@@ -21,6 +21,8 @@ export const URLS = {
   HOME: "/en",
   PROFILE: "/en/profile",
   GALLERY: "/en/gallery",
+  VIDEOS: "/en/videos",
   GALLERY_IMAGE: (id: string | number) => `/en/gallery/${id}`,
+  VIDEO: (id: string | number) => `/en/videos/${id}`,
   ...generateProfileUrl(),
 };
