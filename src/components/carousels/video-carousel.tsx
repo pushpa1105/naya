@@ -61,10 +61,12 @@ const VideoCarousel: React.FC<CarouselPropType> = (props) => {
             <PrevButton
               onClick={onPrevButtonClick}
               disabled={prevBtnDisabled}
+              aria-label="prev-btn"
             />
             <NextButton
               onClick={onNextButtonClick}
               disabled={nextBtnDisabled}
+              aria-label="next-btn"
             />
           </div>
 
@@ -77,6 +79,7 @@ const VideoCarousel: React.FC<CarouselPropType> = (props) => {
                   index === selectedIndex ? "bg-white" : "",
                   navClassName && navClassName,
                 )}
+                aria-label="dot-button"
               />
             ))}
           </div>

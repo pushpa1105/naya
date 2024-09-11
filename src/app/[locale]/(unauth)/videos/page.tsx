@@ -10,7 +10,7 @@ import { getThumbnailForYTVideos } from "@/utils/helpers";
 const GalleryPage = () => {
   return (
     <BlurLoad>
-      <div className="grid-col grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid-col grid gap-x-4 md:grid-cols-2 lg:grid-cols-4">
         {videoList.map((x, index) => (
           <Link
             href={URLS.VIDEO(x.id)}

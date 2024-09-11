@@ -49,6 +49,7 @@ export default function RootLayout(props: {
     <html
       lang={props.params.locale}
       className={`${proxima.variable} font-sans`}
+      title="Naya"
     >
       <body>
         <NextIntlClientProvider

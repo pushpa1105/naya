@@ -41,8 +41,11 @@ export const FocusCard = React.memo(
             <Image
               src={card.src}
               alt={card.title}
-              width="1000"
-              height="1000"
+              unoptimized
+              priority
+              quality={75}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={cn(
                 "size-full object-cover group-hover/card:shadow-xl grayscale-[80%]",
                 hovered === index && "grayscale-0",
