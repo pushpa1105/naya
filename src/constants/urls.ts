@@ -26,3 +26,11 @@ export const URLS = {
   VIDEO: (id: string | number) => `/en/videos/${id}`,
   ...generateProfileUrl(),
 };
+
+export const getUrlsInArray = () => {
+  const values: Array<string> = [];
+  Object.entries(URLS).forEach(([_, value]) => {
+    if (typeof value === "string") values.push(value);
+  });
+  return values;
+};

@@ -10,7 +10,8 @@ Welcome to IZNAYA, the fan project for IZNA! This Next.js application is dedicat
 ## Features
 
 - **Group Profile**: Detailed information about IZNA members, including profiles, discography, and achievements.
-- **Music Library**: A collection of IZNA's songs, albums, and music videos.
+- **Gallery Library**: A collection of IZNA related photos.
+- **Video Library**: A collection of IZNA related videos.
   <!-- - **Performance Archive**: Videos and photos from concerts, variety shows, and other appearances. -->
   <!-- - **News Feed**: Latest updates on IZNA's activities, schedules, and announcements. -->
   <!-- - **Community Forum**: A space for NAYA to discuss, share fan art, and connect with each other. -->
