@@ -6,8 +6,8 @@ const siteMetadata = {
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://iznaya.netlify.app/", // your website URL
-  siteLogo: "../../public/assets/images/izna/logo_transparent.png",
-  socialBanner: "../../public/assets/images/izna/iznaya.png", // add social banner in the public folder
+  siteLogo: "/assets/images/izna/logo_transparent.png",
+  socialBanner: "/assets/images/izna/iznaya.png", // add social banner in the public folder
   email: "me.buffedon@gmail.com",
   github: "https://github.com/pushpa1105",
   twitter: "https://twitter.com",
