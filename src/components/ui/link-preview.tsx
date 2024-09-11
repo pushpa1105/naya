@@ -6,10 +6,10 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import Link from "next/link";
-import { encode } from "qss";
-import React from "react";
+import { useEffect, useState } from "react";
 
 import { cn } from "@/libs/utils";
 
@@ -20,11 +20,8 @@ type LinkPreviewProps = {
   width?: number;
   height?: number;
   quality?: number;
-} & (
-  | { isStatic: true; imageSrc: string }
-  | { isStatic?: false; imageSrc?: never }
-);
-
+  imageSrc: string | StaticImageData;
+};
 export const LinkPreview: React.FC<LinkPreviewProps> = ({
   children,
   url,
@@ -32,32 +29,13 @@ export const LinkPreview: React.FC<LinkPreviewProps> = ({
   width = 200,
   height = 125,
   quality = 50,
-  isStatic = false,
-  imageSrc = "",
+  imageSrc,
 }) => {
-  let src;
-  if (!isStatic) {
-    const params = encode({
-      url,
-      screenshot: true,
-      meta: false,
-      embed: "screenshot.url",
-      colorScheme: "dark",
-      "viewport.isMobile": true,
-      "viewport.deviceScaleFactor": 1,
-      "viewport.width": width * 3,
-      "viewport.height": height * 3,
-    });
-    src = `https://api.microlink.io/?${params}`;
-  } else {
-    src = imageSrc;
-  }
+  const [isOpen, setOpen] = useState(false);
 
-  const [isOpen, setOpen] = React.useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-  const [isMounted, setIsMounted] = React.useState(false);
-
-  React.useEffect(() => {
+  useEffect(() => {
     setIsMounted(true);
   }, []);
 
@@ -78,7 +56,7 @@ export const LinkPreview: React.FC<LinkPreviewProps> = ({
       {isMounted ? (
         <div className="hidden">
           <Image
-            src={src}
+            src={imageSrc}
             width={width}
             height={height}
             quality={quality}
@@ -137,7 +115,7 @@ export const LinkPreview: React.FC<LinkPreviewProps> = ({
                   aria-label="link-preview"
                 >
                   <Image
-                    src={isStatic ? imageSrc : src}
+                    src={imageSrc}
                     width={width}
                     height={height}
                     quality={quality}

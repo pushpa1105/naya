@@ -7,6 +7,14 @@ export { default as MAI_MAIN } from "../../public/assets/images/main/mai.jpeg";
 export { default as SAEBI_MAIN } from "../../public/assets/images/main/saebi.jpeg";
 export { default as SARANG_MAIN } from "../../public/assets/images/main/sarang.jpeg";
 
+//Link Preview Images
+export { default as IZNA_IG_PREVIEW } from "../../public/assets/images/main/ig-preview.png";
+export { default as TBL_PREVIEW } from "../../public/assets/images/main/tbl-preview.png";
+export { default as IZNA_TIKTOK_PREVIEW } from "../../public/assets/images/main/tiktok-preview.png";
+export { default as IZNA_X_PREVIEW } from "../../public/assets/images/main/twitter-preview.png";
+export { default as WAKEONE_PREVIEW } from "../../public/assets/images/main/wake-one-preview.png";
+export { default as IZNA_YT_PREVIEW } from "../../public/assets/images/main/yt-preview.png";
+
 // LOGOS
 export { default as IZNA_LOGO } from "../../public/assets/images/izna/logo_transparent.png";
 export { default as TBL_LOGO } from "../../public/assets/images/main/tbl-logo.png";
